@@ -1,0 +1,40 @@
+9 9 11 10
+50 Devi pagare 50 euro perche' hai comprato il CD di Gigi D'Alessio.
+200 E' passato il corriere e c'e' da pagare la dogana, 200 euro!
+100 Ieri era il termine ultimo per pagare le tasse, e te ne sei dimenticato. Paga la mora!
+500 Manca la corrente al Palazzo e rimani chiuso dentro. Paga la chiamata dell'elettricista.
+20 Hai sete e vai a prendere una bottiglia d'acqua alle macchinette, che pero' rimane incastrata.
+50 Un piccione decide di defecare sul libro che hai preso in prestito ieri in biblioteca. Ricompra il libro.
+100 Qualcuno ha tagliato la sbarra del parcheggio superiore, riparala!
+100 Avevi parcheggiato in doppia fila... Paga il carro attrezzi!
+200 Ti hanno beccato mentre pilotavi un drone senza autorizzazione (e senza patente)! Paga la multa! 
+10 20 50 Paga il servizio di pulizia delle Aule.
+20 30 60 E' arrivata la bolletta dell'Enel!
+0 0 100 In realta' e' vietato costruire tende nelle aule del palazzo. Paga una multa per ognuna di esse!
+0 20 0 Nel regolamento di dipartimento c'e' scritto che non hai diritto ad avere scrivanie. Paga una multa per ognuna di esse!
+10 0 0 Un corto ha fatto fulminare tutte e sole le lampadine presenti nelle tue aule, sostituiscile!
+30 0 0 Lo sviluppo tecnologico richiede che nelle tue aule siano presenti le LIM. Sostutuisci quelle vecchie lavagne!
+50 10 10 E' arrivato il momento di ristrutturare le aule!
+20 5 10 Sono stati avvistati ratti all'interno del palazzo! Procedi con la derattizzazione delle aule!
+20 20 50 Certi problemi li puo' risolvere solo l'autospurgo, che ha fatto passare il tubo nelle tue aule. Paga le pulizie straordinarie!
+Perche' la bambina cadde dall'altalena? Perche' non aveva le braccia.
+Perche' i pesci hanno le spine? Perche' nel mare c'e' la corrente.
+Dire ciao fa bene: e' salutare.
+Cosa succede ad un vegetariano prima di un'operazione chirurgica? Lo sedano.
+Come si uccide un orologiaio? Colpendolo.
+Un muto dice a un sordo: C'e' un cieco che ci sta guardando!
+Mamma, la nonna e' cattiva! Zitto e mangia.
+Beati i poveri di spirito, perche' non si ubriacheranno mai.
+Dalla barca gli buttarono una ciambella di salvataggio, ma more' lo stesso perche' era diabetico.
+Se non sai cogliere l'ironia, prova con i pomodori.
+Una cellula va dal barbiere: 'Mi tosi'.
+30 Hai trovato la stanza delle necessita' al Palazzo, e tu desideravi tanto andare in BatCaverna...
+30 Desideravi tanto fare una partita a ping pong... Va in BatCaverna!
+39 Vai in Aula Costa, sta per iniziare la lezione di PR1!
+8 Non c'e' la rete in Lab T! Vai al SIMAZ a chiedere di ripristinarla...
+35 E' da qualche mese che non controlli la situazione tasse su ESSE3, controlla per sicurezza!
+6 Domani c'e' l'esame di MD! Vai in Aula Studio a studiare.
+38 Il corriere ha consegnato il tuo pacco ad un tuo omonimo, vai a ritirarlo in Aula Anatomica!
+31 L'aula Costa e' stata confiscata per i test d'ingresso di Farmacia, vai in Aula Magna di Fisica!
+18 Ci sono scartoffie da firmare che ti aspettano: vai in Segreteria!
+36 Pausa! Vai al Bar Rotondo!

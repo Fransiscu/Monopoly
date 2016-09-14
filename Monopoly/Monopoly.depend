@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1473503684 source:d:\uni\materie\1° anno\1° sem\pr1\monopoly\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<time.h>
+	"functions.h"
+	"functions.c"
+
+1473503614 d:\uni\materie\1° anno\1° sem\pr1\monopoly\functions.h
+	<stdio.h>
+	<time.h>
+
+1466978716 d:\uni\materie\1° anno\1° sem\pr1\monopoly\prototypes.h
+
+1473504418 d:\uni\materie\1° anno\1° sem\pr1\monopoly\functions.c
+	<stdio.h>
+	"functions.h"
+

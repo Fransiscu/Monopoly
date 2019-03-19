@@ -20,9 +20,9 @@ _Bool isEmpty(FILE *fp){
 }
 
 
-Player* allocate(Player **a, int n) { //passo un doppio puntatore perche' dovro' chiamare questa funzione da un'altra e la voglio rendere visibile dal main
+void allocate(Player **a, int n) { //passo un doppio puntatore perche' dovro' chiamare questa funzione da un'altra e la voglio rendere visibile dal main
   *a = (Player *) malloc (sizeof(Player)*n); //funzione malloc per allocare la memoria
-  return *a;                                    //rendo puntatore ad array
+  //return *a;                                    //rendo puntatore ad array
 }
 
 
@@ -209,7 +209,8 @@ void checkBalance(Player * a, int *nPlayers, Room * rooms){ //prendo in ingresso
             a[n].roomValue=a[n+1].roomValue;
             }
             *nPlayers-=1;                        //diminuisco il numero dei giocatori totali via puntatore, che verra' letto dal main
-            a=realloc(a, (*nPlayers*sizeof(Player *))); // ERROR TODO
+            allocate(&a, *nPlayers);
+            //a=realloc(a, (*nPlayers*sizeof(Player *))); // ERROR TODO
         }
     }
 }
@@ -410,10 +411,11 @@ void waitFor (unsigned int secs){     //prendo in ingresso un numero che sara' i
 }
 
 void clear(){
-    #ifdef OS_Windows
+    #ifdef _WIN32
     system("cls");
-    #else
+    #elif defined __unix__
     system("clear");
-    #endif 
-    
+    #elif defined __APPLE__
+    system("clear");
+    #endif
 }

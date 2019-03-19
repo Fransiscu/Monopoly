@@ -18,3 +18,20 @@
 	<stdio.h>
 	"functions.h"
 
+1553004488 source:c:\users\franc\documents\monopoly\monopoly\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<time.h>
+	"functions.h"
+	"functions.c"
+
+1553008686 c:\users\franc\documents\monopoly\monopoly\functions.h
+	<stdio.h>
+	<time.h>
+
+1553009017 c:\users\franc\documents\monopoly\monopoly\functions.c
+	<stdio.h>
+	"functions.h"
+

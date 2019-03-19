@@ -55,7 +55,7 @@ _Bool isEmpty(FILE *);
 _Bool exists (FILE *);
 
 /*Funzione per allocare in memoria un array*/
-Player* allocate(Player **, int);
+void allocate(Player **, int);
 
 /*Inizializzo i giocatori e i campi principali della struttura Player*/
 Player* initializePlayers(Player *, int);

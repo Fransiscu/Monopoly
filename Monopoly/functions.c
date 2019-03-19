@@ -409,9 +409,11 @@ void waitFor (unsigned int secs){     //prendo in ingresso un numero che sara' i
     while (time(0) < retTime);
 }
 
+
+/* Windows and UNIX support*/
 void clear(){
     #ifdef _WIN32
-    //system("cls");
+    system("cls");
     #elif defined __unix__
     system("clear");
     #elif defined __APPLE__

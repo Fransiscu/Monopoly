@@ -209,7 +209,7 @@ void checkBalance(Player * a, int *nPlayers, Room * rooms){ //prendo in ingresso
             a[n].roomValue=a[n+1].roomValue;
             }
             *nPlayers-=1;                        //diminuisco il numero dei giocatori totali via puntatore, che verra' letto dal main
-            a=realloc(a, (*nPlayers*sizeof(Player *)));
+            a=realloc(a, (*nPlayers*sizeof(Player *))); // probabile errore TODO
         }
     }
 }

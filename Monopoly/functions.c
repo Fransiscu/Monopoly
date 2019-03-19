@@ -185,35 +185,34 @@ int checkRoom(Player * player, Room * room, int a){     //prendo in ingresso l'a
     return 0;
 }
 
-void checkBalance(Player * a, int *nPlayers, Room * rooms){ //prendo in ingresso l'array player, numero giocatori via vettore e array stanze
-    int i, j, k, n;             //variabili usate all'interno di questa funzione
-    for(i=0; i<*nPlayers;i++){      //ciclo giocatori
-        if (a[i].playerBalance<1){      //se il bilancio <1
-            printf("%s e' stato eliminato!\n", a[i].playerName); //stampo eliminazione
-            waitFor(2);
-            for (k=0; k<ROOM_NUMBER; k++){      //trasferisco le stanze al giocatore 8, il banco
-                if (rooms[k].owner==i){
-                    rooms[k].owner=8;
+void checkBalance(Player *a, int *nPlayers, Room * rooms){  //prendo in ingresso l'array player, numero giocatori via vettore e array stanze
+    int i, k, n;    //variabili usate nella funzione
+
+    for(i=0; i<=*nPlayers; i++){    //scorro array players
+        if(a[i].playerBalance <1){  //se balance < 1
+            printf("%s e' stato eliminato\n", a[i].playerName);
+            for(k=0; k<ROOM_NUMBER; k++){   //assegno stanze al banco
+                if(rooms[k].owner == i){
+                    rooms[k].owner = 8;
                 }
             }
-            for (j=0; j<MAXCHAR; j++){
-                a[i].playerName[j]=a[i+1].playerName[j+1];  //trasferisco il nome
+
+            for(n=i; n<*nPlayers; n++){     //shifto di uno a sx
+                strcpy(a[n].playerName, a[n+1].playerName);
+                a[n].playerBalance=a[n+1].playerBalance;
+                a[n].playerPosition=a[n+1].playerPosition;
+                a[n].roomAmount=a[n+1].roomAmount;
+                a[n].deskAmount=a[n+1].deskAmount;
+                a[n].tentAmount=a[n+1].tentAmount;
+                a[n].stopTurns=a[n+1].stopTurns;
+                a[n].roomValue=a[n+1].roomValue;
             }
-            for(n=i; n<*nPlayers; n++){         //faccio scalare tutti i valori di uno a sx
-            a[n].playerBalance=a[n+1].playerBalance;
-            a[n].playerPosition=a[n+1].playerPosition;
-            a[n].roomAmount=a[n+1].roomAmount;
-            a[n].deskAmount=a[n+1].deskAmount;
-            a[n].tentAmount=a[n+1].tentAmount;
-            a[n].stopTurns=a[n+1].stopTurns;
-            a[n].roomValue=a[n+1].roomValue;
-            }
-            *nPlayers-=1;                        //diminuisco il numero dei giocatori totali via puntatore, che verra' letto dal main
-            allocate(&a, *nPlayers);
-            //a=realloc(a, (*nPlayers*sizeof(Player *))); // ERROR TODO
+            *nPlayers -= 1;     //riduco di 1 size
+            //a = realloc(a, (*nPlayers*sizeof(Player *)));
         }
     }
 }
+
 
 void checkRoomResult(int i){    //prendo in ingresso iltipo di stanza e stampo a schermo una frase a seconda di questa
     if (i==1){                  //funzione base
@@ -412,7 +411,7 @@ void waitFor (unsigned int secs){     //prendo in ingresso un numero che sara' i
 
 void clear(){
     #ifdef _WIN32
-    system("cls");
+    //system("cls");
     #elif defined __unix__
     system("clear");
     #elif defined __APPLE__

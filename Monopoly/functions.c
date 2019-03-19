@@ -409,4 +409,11 @@ void waitFor (unsigned int secs){     //prendo in ingresso un numero che sara' i
     while (time(0) < retTime);
 }
 
-void clear(){system("cls");};
+void clear(){
+    #ifdef OS_Windows
+    system("cls");
+    #else
+    system("clear");
+    #endif 
+    
+}

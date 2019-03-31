@@ -9,7 +9,7 @@ void welcome(){
 }
 
 
-_Bool isEmpty(FILE *fp){
+_Bool isEmpty(FILE *fp){ 
     fseek(fp, 0, SEEK_END);
     if (ftell(fp) == 0){
         return false;
